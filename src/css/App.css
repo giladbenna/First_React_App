@@ -1,0 +1,73 @@
+.main-content {
+  display: flex;
+  overflow-y: auto; 
+  flex-grow: 1; 
+}
+
+.category-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ccc;
+  height: 100vh; /* Full height of viewport */
+  overflow-y: auto; /* Allow scrolling */
+}
+
+.category-button {
+  padding: 10px 20px;
+  text-align: left;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for visual feedback */
+}
+
+.category-button:hover, .category-button:focus {
+  background-color: #0066ff; /* Blue background on hover/focus */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow for depth */
+  color: white; /* Text color change for better visibility on hover */
+}
+  
+.right-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBarContainer {
+  padding: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+  justify-content: normal; /* Adjusts content distribution to default spacing */
+  width: 100%; /* Ensures the grid takes up the full width of its container */
+  overflow: hidden; /* Prevents overflow of the grid container */
+  grid-template-columns: repeat(5, 1fr); /* Always three columns */
+
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: #666;
+  width: 100%;  /* Ensures the div takes the full width of its container */
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;  /* Centers content vertically in the div */
+  height: 100px;  /* Gives the div some height */
+}

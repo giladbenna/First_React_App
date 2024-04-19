@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Epic Movie",
+    "views": 150,
+    "picture": "https://m.media-amazon.com/images/M/MV5BMTA3NDM5ODU3NzleQTJeQWpwZ15BbWU3MDgyMjgyNDE@._V1_.jpg",
+    "category": "Comedy",
+    "rating": 4.2
+
+  },
+  {
+    "id": 2,
+    "name": "Pirates of the caribbean",
+    "views": 250,
+    "picture": "https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+    "category": "Action",
+    "rating": 5
+
+  },
+  {
+    "id": 3,
+    "name": "Avatar",
+    "views": 58,
+    "picture": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_.jpg",
+    "category": "Adventure",
+    "rating": 2.7
+
+  },
+  {
+    "id": 4,
+    "name": "Narnia",
+    "views": 534,
+    "picture": "https://m.media-amazon.com/images/I/91vaWN237nL._AC_UF1000,1000_QL80_.jpg",
+    "category": "Adventure",
+    "rating": 3.5
+
+  },
+  {
+    "id": 5,
+    "name": "Shrek",
+    "views": 322,
+    "picture": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2023/05/10164919/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+    "category": "Kids",
+    "rating": 5
+
+  },
+  {
+    "id": 6,
+    "name": "Inside Out 2",
+    "views": 250,
+    "picture": "https://lumiere-a.akamaihd.net/v1/images/image_0276007d.jpeg?region=0%2C0%2C540%2C810&width=320",
+    "category": "Kids",
+    "rating": 5
+
+  },
+  {
+    "id": 7,
+    "name": "Ant-man",
+    "views": 100,
+    "picture": "https://m.media-amazon.com/images/I/91NUTw0LDoL._AC_UF894,1000_QL80_.jpg",
+    "category": "Action",
+    "rating": 3.6
+
+  },
+  {
+    "id": 8,
+    "name": "Not taking hard",
+    "views": 350,
+    "picture": "https://www.seret.co.il/images/movies/NoHardFeelings/NoHardFeelings1.jpg",
+    "category": "Comedy",
+    "rating": 1.3
+
+  }
+]

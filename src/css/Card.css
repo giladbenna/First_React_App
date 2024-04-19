@@ -1,0 +1,49 @@
+.card {
+    width: 100%;  /* Full width of the container, you can limit this with max-width */
+    max-width: 300px; /* Maximum width */
+    min-height: 450px; /* Maximum height */
+
+    margin: auto; /* Centering if in a larger container */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 50vw; /* Responsive based on viewport width */
+    max-height: 240px; /* Maximum height */
+    object-fit: fill;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.star {
+    color: #ddd; /* Light gray for empty stars */
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .star .filled {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    color: #ffc107; /* Gold color for filled stars */
+    width: 0%; /* Default width */
+  }
+
+  .rating-number {
+    margin-left: 8px; /* Space between stars and number */
+    font-size: 18px; /* Font size similar to stars */
+    color: #666; /* Color for the rating number */
+  }
+  
+  
+  

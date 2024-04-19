@@ -1,0 +1,26 @@
+/* SearchBar.css */
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.searchBarContainer input[type="search"] {
+  flex-grow: 1; /* Allows input to take available space */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchBarContainer button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px; /* Space between input and button */
+}
+
+.searchBarContainer button:hover {
+  background-color: #0056b3;
+}
