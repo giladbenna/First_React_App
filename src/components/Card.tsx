@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Card.css";
+import "../css/OrderButton.css";
 import { Card as CardModel } from "../models/CardModel"; // Adjust the path to where you store your models
+import ButtonComponent from "./ButtonComponent";
+import TimeSelectModal from "./TimeSelectModal";
 
 interface CardProps {
   card: CardModel; // Use the imported Card interface
 }
+
 function renderStars(rating = 0) {
   const totalStars = 5;
   let stars = [];
@@ -24,6 +28,15 @@ function renderStars(rating = 0) {
 
 function Card({ card }: CardProps) {
   const { name, views, picture, rating } = card;
+  const [isModalOpen, setModalOpen] = React.useState(false);
+
+  const handleOpenModal = () => setModalOpen(true);
+  const handleCloseModal = () => setModalOpen(false);
+  const handleSelectTime = (time: string) => {
+    // Define type here
+    console.log("Time selected:", time);
+    handleCloseModal();
+  };
 
   return (
     <div className="card">
@@ -33,13 +46,16 @@ function Card({ card }: CardProps) {
         <p>{views} views</p>
         <div className="card-rating">
           {renderStars(rating)}
-          <span className="rating-number">
-            {"( "}
-            {rating.toFixed(1)}
-          </span>
-          {" )"}
-          {/* Display rating with one decimal */}
+          <span className="rating-number">({rating.toFixed(1)})</span>
         </div>
+        {/* Button to open modal */}
+        <ButtonComponent label="Order Tickets" onClick={handleOpenModal} />
+        {/* Modal for selecting time */}
+        <TimeSelectModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          onSelectTime={handleSelectTime}
+        />
       </div>
     </div>
   );
